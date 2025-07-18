@@ -18,3 +18,16 @@ def character_count(text):
                 count += 1
             dictionary[key] = count
     return dictionary
+
+#test_dict = {"a" : 1 , "b" : 2 , "c" : 3}
+
+def sort_on(items):
+    return items["num"]
+
+def sort_dict(unsorted_dict):
+    list = []
+    for item in unsorted_dict:
+        dictionary = {"char": item, "num": unsorted_dict[item]}
+        list.append(dictionary)
+        list.sort(reverse=True, key=sort_on)
+    return list

@@ -1,5 +1,6 @@
 from stats import word_count
 from stats import character_count
+from stats import sort_dict
 
 # Main function returns word count in document
 def main():
